@@ -1,5 +1,5 @@
 {
-    "name": "leaves-topic-dev",
+    "name": "leaves-topic-dev-test",
     "version": 2,
 	"github": {
     "enabled": false
@@ -34,4 +34,4 @@
         { "src": "/homepage", "headers": { "cache-control": "s-maxage=600" }, "dest": "/index" },
         { "src": "/bundle/(?<bundle_ids>[1-9-,]+)", "headers": { "cache-control": "s-maxage=600" }, "dest": "/bundle?bundle_ids=$bundle_ids" }
     ]
-}
+}
