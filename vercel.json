@@ -1,0 +1,37 @@
+{
+    "name": "leaves-topic-dev",
+    "version": 2,
+	"github": {
+    "enabled": false
+	},
+    "env": {
+	    "LEAVES_API_URL": "@leaves_api_url_dev",
+        "LEAVES_API_ACCESSTOKEN": "@leaves_api_accesstoken",
+        "LEAVES_SEARCH_POINT": "@leaves_search_point",
+        "PROD_GA_CODE": "@prod_ga_code",
+        "STAGE_GA_CODE": "@stage_ga_code",
+        "DEV_GA_CODE": "@dev_ga_code",
+        "PROD_PT_ENGINE_CODE": "@prod_pt_engine_code",
+        "STAGE_PT_ENGINE_CODE": "@stage_pt_engine_code",
+        "DEV_PT_ENGINE_CODE": "@dev_pt_engine_code"
+      },
+    "build": {
+        "env": {
+		  "LEAVES_API_URL": "@leaves_api_url_dev",
+          "LEAVES_API_ACCESSTOKEN": "@leaves_api_accesstoken",
+          "LEAVES_SEARCH_POINT": "@leaves_search_point",
+          "PROD_GA_CODE": "@prod_ga_code",
+          "STAGE_GA_CODE": "@stage_ga_code",
+          "DEV_GA_CODE": "@dev_ga_code",
+          "PROD_PT_ENGINE_CODE": "@prod_pt_engine_code",
+          "STAGE_PT_ENGINE_CODE": "@stage_pt_engine_code",
+          "DEV_PT_ENGINE_CODE": "@dev_pt_engine_code"
+        }
+      },
+    "builds": [{ "src": "package.json", "use": "@now/next" }],
+    "routes": [
+        { "src": "/topic/(?<slug_string>[a-z-,]+)", "headers": { "cache-control": "s-maxage=600" }, "dest": "/index?slug_string=$slug_string" },
+        { "src": "/homepage", "headers": { "cache-control": "s-maxage=600" }, "dest": "/index" },
+        { "src": "/bundle/(?<bundle_ids>[1-9-,]+)", "headers": { "cache-control": "s-maxage=600" }, "dest": "/bundle?bundle_ids=$bundle_ids" }
+    ]
+}
