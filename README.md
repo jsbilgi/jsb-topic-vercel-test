@@ -1,5 +1,4 @@
 # leaves.topic
-# Test
 
 Server Side Rendering of Leaves Topic Pages
 
