@@ -15,4 +15,5 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required1
           vercel-org-id: ${{ secrets.ORG_ID }}  #Required
-          vercel-project-id: ${{ secrets.PROJECT_ID }} #Required 
+          vercel-project-id: ${{ secrets.PROJECT_ID }} #Required
+          working-directory: ./sub-directory
