@@ -16,3 +16,4 @@ jobs:
           vercelToken: ${{ secrets.VERCEL_TOKEN }} # Required
           vercelOrgId: ${{ secrets.ORG_ID }}  #Required
           vercelProjectId: ${{ secrets.PROJECT_ID }} #Required
+          sourceDirectory: "./"
