@@ -1,0 +1,19 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+name: jsb-topic-vercel-dev
+on: 
+  push:
+    branches: 
+      - master
+      - dev
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/vercel-action@v19
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}  #Required
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required 
+
