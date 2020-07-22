@@ -1,6 +1,7 @@
 {
     "name": "leaves-topic-dev-test",
     "version": 2,
+	"scope": "amondnet",
 	"github": {
     "enabled": false
 	},
