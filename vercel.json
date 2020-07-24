@@ -1,5 +1,6 @@
 {
     "name": "leaves-topic-dev",
+    "scope": "jsbilgi",
     "version": 2,
 	"github": {
     "enabled": false
