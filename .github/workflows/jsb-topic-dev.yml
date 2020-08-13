@@ -1,0 +1,11 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: JSB-Topic-Vercel Action
+  uses: amondnet/vercel-action@v19.0.1
+  with:
+    vercel-token: Om7h5BnDD6em62hloYsRPEQN
+    # 
+    vercel-args: # optional, default is 
+    vercel-project-id: QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj
+    vercel-org-id: ud5fRd9bUDJUdnGkigXGmJFK
