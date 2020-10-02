@@ -8,6 +8,7 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: "RfECyC2yHSR8Jkf1DaMjLChs" # Required
+          github-token: "" #Optional 
           vercel-args: '--prod' #Optional
           vercel-org-id: "ud5fRd9bUDJUdnGkigXGmJFK"  #Required
           vercel-project-id: "QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj" #Required 
