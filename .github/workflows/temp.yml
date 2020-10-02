@@ -7,8 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v19
         with:
-          vercel-token: "RfECyC2yHSR8Jkf1DaMjLChs"
-          vercel-args: '--prod' 
-          vercel-org-id: "ud5fRd9bUDJUdnGkigXGmJFK"
-          vercel-project-id: "QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj"
+          vercel-token: RfECyC2yHSR8Jkf1DaMjLChs
+          vercel-org-id: ud5fRd9bUDJUdnGkigXGmJFK
+          vercel-project-id: QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj
           working-directory: ./sub-directory
