@@ -11,4 +11,3 @@ jobs:
           github-token: ''
           vercel-org-id: 'ud5fRd9bUDJUdnGkigXGmJFK'
           vercel-project-id: 'QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj'
-          working-directory: ./sub-directory
