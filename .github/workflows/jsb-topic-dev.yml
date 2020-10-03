@@ -1,7 +1,0 @@
-- name: JSB-Topic-Vercel Action
-  uses: amondnet/vercel-action@v19.0.1
-  with:
-    vercel-token: Om7h5BnDD6em62hloYsRPEQN
-    vercel-project-id: QmXvbJ89Ce9tcQ5XvkNF172JA4LLBVsDFeT8zRQQhUvAaj
-    vercel-org-id: ud5fRd9bUDJUdnGkigXGmJFK
- 
